@@ -194,7 +194,7 @@ Focuses on commercial performance across salespeople and customer segments.
 
 ### 1. Sales growth accelerated after 2015
 
-Sales declined by approximately **2.83% in 2015**, followed by strong growth of **29.47% in 2016** and **20.36% in 2017**.
+Sales declined by approximately **2.83% in 2015**, followed by strong growth of **29.5% in 2016** and **20.4% in 2017**.
 
 ### 2. Discounting creates significant profitability pressure
 
@@ -237,13 +237,14 @@ Retail-Supply-Chain-Sales-Analytics/
 ├── README.md
 │
 ├── dashboard/
+│   ├── Retail_Supply_Chain_Sales_Analytics.pdf
 │   └── Retail_Supply_Chain_Sales_Analytics.pbix
 │
-├── notebook/
-│   └── Data_Profiling_and_Preparation.ipynb
+├── sales-analytics-data-profiling-and-preparation.ipynb
 │
 ├── data/
-│   └── README.md
+│   ├── README.md
+│   └── Retail-Supply-Chain-Sales-Dataset.xlsx
 │
 ├── images/
 │   ├── dashboard_page_1.png
@@ -251,8 +252,11 @@ Retail-Supply-Chain-Sales-Analytics/
 │   └── dashboard_page_3.png
 │
 └── docs/
-    ├── data_dictionary.md
-    └── dax_measures.md
+│    ├── Sales_Analytics_DAX_Measures.pdf
+│    └── Sales_Analytics_DAX_Measures.xlsx
+│
+├── LICENSE
+
 ```
 ---
 
