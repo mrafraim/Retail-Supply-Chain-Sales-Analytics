@@ -15,12 +15,12 @@
 
 ## 2. Time Intelligence & Growth
 
-| **Measure**              | **Meaning**                                           | **DAX Formula**                                                                                                                         |   |                                                                                                                                                                                             |
-| ------------------------ | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | - | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Previous Year Sales**  | Sales for the equivalent period in the previous year  | `Previous Year Sales = CALCULATE ( [Total Sales], SAMEPERIODLASTYEAR ( DimDate[Date] ) )`                                               |   |                                                                                                                                                                                             |
-| **YoY Sales Growth %**   | Year-over-year sales growth                           | ```DAX\nYoY Sales Growth % =\nIF (\n    NOT ISINSCOPE ( DimDate[Year] ),\n    BLANK(),\n    IF (\n        ISBLANK ( [Total Sales] )\n   |   | ISBLANK ( [Previous Year Sales] ),\n        BLANK(),\n        DIVIDE (\n            [Total Sales] - [Previous Year Sales],\n            [Previous Year Sales]\n        )\n    )\n)\n```     |
-| **Previous Year Profit** | Profit for the equivalent period in the previous year | `Previous Year Profit = CALCULATE ( [Total Profit], SAMEPERIODLASTYEAR ( DimDate[Date] ) )`                                             |   |                                                                                                                                                                                             |
-| **YoY Profit Growth %**  | Year-over-year profit growth                          | ```DAX\nYoY Profit Growth % =\nIF (\n    NOT ISINSCOPE ( DimDate[Year] ),\n    BLANK(),\n    IF (\n        ISBLANK ( [Total Profit] )\n |   | ISBLANK ( [Previous Year Profit] ),\n        BLANK(),\n        DIVIDE (\n            [Total Profit] - [Previous Year Profit],\n            [Previous Year Profit]\n        )\n    )\n)\n``` |
+| **Measure** | **Meaning** | **DAX Formula** |
+|---|---|---|
+| **Previous Year Sales** | Sales for the equivalent period in the previous year | `Previous Year Sales = CALCULATE ( [Total Sales], SAMEPERIODLASTYEAR ( DimDate[Date] ) )` |
+| **YoY Sales Growth %** | Year-over-year sales growth | `YoY Sales Growth % = IF ( NOT ISINSCOPE ( DimDate[Year] ), BLANK(), IF ( ISBLANK ( [Total Sales] ) \| ISBLANK ( [Previous Year Sales] ), BLANK(), DIVIDE ( [Total Sales] - [Previous Year Sales], [Previous Year Sales] ) ) )` |
+| **Previous Year Profit** | Profit for the equivalent period in the previous year | `Previous Year Profit = CALCULATE ( [Total Profit], SAMEPERIODLASTYEAR ( DimDate[Date] ) )` |
+| **YoY Profit Growth %** | Year-over-year profit growth | `YoY Profit Growth % = IF ( NOT ISINSCOPE ( DimDate[Year] ), BLANK(), IF ( ISBLANK ( [Total Profit] ) \| ISBLANK ( [Previous Year Profit] ), BLANK(), DIVIDE ( [Total Profit] - [Previous Year Profit], [Previous Year Profit] ) ) )` |
 
 ---
 
