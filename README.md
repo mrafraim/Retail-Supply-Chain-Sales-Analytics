@@ -235,27 +235,28 @@ Customer segments differ in both sales contribution and profit margin, demonstra
 Retail-Supply-Chain-Sales-Analytics/
 │
 ├── README.md
+├── LICENSE
 │
-├── dashboard/
-│   ├── Retail_Supply_Chain_Sales_Analytics.pdf
-│   └── Retail_Supply_Chain_Sales_Analytics.pbix
-│
-├── sales-analytics-data-profiling-and-preparation.ipynb
+├── notebooks/
+│   └── sales_analytics_data_profiling_and_preparation.ipynb
 │
 ├── data/
 │   ├── README.md
 │   └── Retail-Supply-Chain-Sales-Dataset.xlsx
 │
-├── images/
-│   ├── dashboard_page_1.png
-│   ├── dashboard_page_2.png
-│   └── dashboard_page_3.png
+├── dashboard/
+│   ├── Retail_Supply_Chain_Sales_Analytics.pbix
+│   └── Retail_Supply_Chain_Sales_Analytics.pdf
 │
-└── docs/
-│    ├── Sales_Analytics_DAX_Measures.pdf
-│    └── Sales_Analytics_DAX_Measures.xlsx
+├── docs/
+│   ├── dax_measures.md
+│   ├── Sales_Analytics_DAX_Measures.pdf
+│   └── Sales_Analytics_DAX_Measures.xlsx
 │
-├── LICENSE
+└── images/
+    ├── dashboard_page_1.png
+    ├── dashboard_page_2.png
+    └── dashboard_page_3.png
 
 ```
 ---
